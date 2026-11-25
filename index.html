@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Kurogane | Restaurante Japonés</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Restaurante japonés contemporáneo. Sushi, ramen y brasa robata.">
+        <meta name="keywords" content="sushi, ramen, restaurante japonés, comida japonesa">
+        <meta name="author" content="Daniel Merino">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+        
+        <!-- Bootstrap v6 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+        
+        <!-- Tu hoja de estilos -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- HEADER (Navegación)  -->
+        <header class="container d-flex flex-wrap justify-content-between align-items-center py-3 border-bottom">
+            <a href="#inicio" class="fs-4 fw-bold text-white text-decoration-none">
+                <span class="text-danger">●</span> KUROGANE
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#inicio" class="nav-link active bg-danger" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#especialidades" class="nav-link text-body">Especialidades</a></li>
+                <li class="nav-item"><a href="#experiencia" class="nav-link text-body">Experiencia</a></li>
+                <li class="nav-item"><a href="#resenas" class="nav-link text-body">Reseñas</a></li>
+                <li class="nav-item"><a href="#reservas" class="nav-link text-body">Reservas</a></li>
+            </ul>
+        </header>
+
+        <!--  MAIN  -->
+        <main>
+
+            <!-- HERO PRINCIPAL CON FOTO DE FONDO -->
+            <section id="inicio" class="position-relative overflow-hidden p-5 md:p-9 md:m-3 text-center text-white rounded-4 border border-secondary" style="background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)), url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+                <div class="md:col-6 lg:p-5 mx-auto my-5">
+                    <span class="badge bg-danger mb-3 px-3 py-2 text-uppercase">Cocina Nipona de Autor</span>
+                    <h1 class="display-4 fw-bold">Tradición japonesa en cada detalle</h1>
+                    <h3 class="fs-5 fw-normal text-white-50 mb-4">Sushi artesanal, ramen de cocción lenta y brasa robata en el corazón de la ciudad.</h3>
+                    <div class="d-flex gap-3 justify-content-center fs-lg">
+                        <a class="btn btn-danger px-4 py-2" href="#especialidades">Ver Especialidades</a>
+                        <a class="btn btn-outline-light px-4 py-2" href="#reservas">Reservar Mesa</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRES COLUMNAS (Especialidades de la carta) -->
+            <section id="especialidades" class="container my-5 py-3 text-center">
+                <div class="row g-4">
+                    
+                    <!-- Columna 1 -->
+                    <div class="lg:col-4">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=300&q=80" alt="Sushi Omakase" class="rounded-circle mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+                        <h2 class="fw-normal fs-3">Sushi Omakase</h2>
+                        <p class="fg-2 px-3">Selección diaria del sushiman con pescado fresco de lonja, corte tradicional y arroz templado variedad Akita Komachi.</p>
+                        <p><a class="btn btn-outline-danger btn-sm px-3" href="#reservas">Reservar para probar »</a></p>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div class="lg:col-4">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=300&q=80" alt="Tonkotsu Ramen" class="rounded-circle mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+                        <h2 class="fw-normal fs-3">Ramen Artesanal</h2>
+                        <p class="fg-2 px-3">Caldos cocinados a fuego lento durante más de 14 horas, acompañados de fideos frescos, panceta chashu y huevo marinado.</p>
+                        <p><a class="btn btn-outline-danger btn-sm px-3" href="#reservas">Reservar para probar »</a></p>
+                    </div>
+
+                    <!-- Columna 3 -->
+                    <div class="lg:col-4">
+                        <img src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=300&q=80" alt="Izakaya y Gyozas" class="rounded-circle mb-3 shadow-sm" width="140" height="140" style="object-fit: cover;">
+                        <h2 class="fw-normal fs-3">Tapas Izakaya</h2>
+                        <p class="fg-2 px-3">Gyozas selladas a la plancha, brochetas yakitori a la brasa de carbón binchotan y tempuras crujientes ligeras.</p>
+                        <p><a class="btn btn-outline-danger btn-sm px-3" href="#reservas">Reservar para probar »</a></p>
+                    </div>
+
+                </div>
+
+                <hr class="my-5">
+
+                <!-- FEATURETTES (Filosofía y local) -->
+                <div id="experiencia" class="text-start">
+                    
+                    <!-- Featurette 1 -->
+                    <div class="row align-items-center g-4 my-4">
+                        <div class="md:col-7">
+                            <h2 class="fw-normal lh-1 mb-3">El respeto por el producto. <span class="fg-2">Frescura absoluta.</span></h2>
+                            <p class="fs-lg fw-light">Seleccionamos cada pieza de atún rojo, salmón y marisco directamente de proveedores sostenibles. Nuestro equipo prepara cada corte al momento para preservar su textura y sabor natural.</p>
+                        </div>
+                        <div class="md:col-5">
+                            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=80" alt="Preparación de nigiris" class="img-fluid rounded-4 shadow-sm w-100" style="height: 350px; object-fit: cover;">
+                        </div>
+                    </div>
+
+                    <hr class="my-5">
+
+                    <!-- Featurette 2 -->
+                    <div class="row align-items-center g-4 my-4">
+                        <div class="md:col-7 md:order-2">
+                            <h2 class="fw-normal lh-1 mb-3">Barra omakase y salón íntimo. <span class="fg-2">Vive el ritual.</span></h2>
+                            <p class="fs-lg fw-light">Siéntate frente a nuestros maestros en la barra de madera de ciprés o disfruta de una velada tranquila en nuestro comedor minimalista acompañado de una cuidada carta de sakes.</p>
+                        </div>
+                        <div class="md:col-5 md:order-1">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Interior del restaurante japonés" class="img-fluid rounded-4 shadow-sm w-100" style="height: 350px; object-fit: cover;">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE RESEÑAS (Adaptada de Columns with icons de Bootstrap) -->
+            <section id="resenas" class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom fw-bold">Lo que dicen nuestros comensales</h2>
+                
+                <div class="row g-4 py-4 row-cols-1 lg:row-cols-3">
+                    
+                    <!-- Reseña 1 -->
+                    <div class="feature col">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-danger text-white fw-bold rounded-3 fs-4 mb-3" style="width: 48px; height: 48px;">
+                            L
+                        </div>
+                        <div class="text-warning mb-1">★★★★★</div>
+                        <h3 class="fs-4 fw-bold">Laura Martínez</h3>
+                        <p class="fg-2">"El menú Omakase en barra es una experiencia obligatoria. El nigiri de ventresca de atún se deshace literalmente en la boca y el trato del sushiman es impecable."</p>
+                        <small class="text-danger fw-semibold">✓ Visita verificada · Barra Omakase</small>
+                    </div>
+
+                    <!-- Reseña 2 -->
+                    <div class="feature col">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-danger text-white fw-bold rounded-3 fs-4 mb-3" style="width: 48px; height: 48px;">
+                            C
+                        </div>
+                        <div class="text-warning mb-1">★★★★★</div>
+                        <h3 class="fs-4 fw-bold">Carlos Mendoza</h3>
+                        <p class="fg-2">"Sin duda el mejor Tonkotsu Ramen que he probado fuera de Tokio. Se nota las horas de cocción del caldo y las gyozas de pato como entrante son espectaculares."</p>
+                        <small class="text-danger fw-semibold">✓ Visita verificada · Cena en salón</small>
+                    </div>
+
+                    <!-- Reseña 3 -->
+                    <div class="feature col">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-danger text-white fw-bold rounded-3 fs-4 mb-3" style="width: 48px; height: 48px;">
+                            E
+                        </div>
+                        <div class="text-warning mb-1">★★★★★</div>
+                        <h3 class="fs-4 fw-bold">Elena Navarro</h3>
+                        <p class="fg-2">"Ambiente íntimo, minimalista y muy elegante. Nos dejamos aconsejar con el maridaje de sake y fue un acierto total. Volveremos seguro para celebrar nuestro aniversario."</p>
+                        <small class="text-danger fw-semibold">✓ Visita verificada · Mesa tatami</small>
+                    </div>
+
+                </div>
+                <hr class="mt-4">
+            </section>
+
+            <!-- RESERVAS -->
+            <section id="reservas" class="container my-5 pb-4">
+                <div class="row g-5">
+                    
+                    <!-- Columna lateral con info del restaurante -->
+                    <div class="md:col-5 lg:col-4 md:order-last">
+                        <div class="p-4 bg-dark text-white rounded-4 border border-secondary h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="badge bg-danger mb-2">Horario y Ubicación</span>
+                                <h4 class="mb-3 fw-bold">Te esperamos en Kurogane</h4>
+                                <p class="text-white-50 small mb-4">Recomendamos reservar con al menos 24 horas de antelación para asegurar sitio en la barra Omakase.</p>
+                                
+                                <ul class="list-unstyled small d-flex flex-column gap-3">
+                                    <li><strong>Dirección:</strong><br><span class="text-white-50">Calle de Velázquez 45, 28001 Madrid</span></li>
+                                    <li><strong>Comidas:</strong><br><span class="text-white-50">Martes a Domingo · 13:30 – 16:00</span></li>
+                                    <li><strong>Cenas:</strong><br><span class="text-white-50">Martes a Sábado · 20:30 – 23:30</span></li>
+                                    <li><strong>Teléfono directo:</strong><br><span class="text-white-50">+34 910 00 00 00</span></li>
+                                </ul>
+                            </div>
+                            <div class="pt-3 border-top border-secondary mt-4">
+                                <small class="text-white-50">Grupos de más de 6 personas consultar por teléfono.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de reserva -->
+                    <div class="md:col-7 lg:col-8">
+                        <h3 class="mb-2 fw-bold">Reserva tu mesa</h3>
+                        <p class="fg-2 mb-4">Completa tus datos y te confirmaremos tu reserva al instante.</p>
+                        
+                        <form>
+                            <div class="row g-3">
+                                
+                                <div class="col-12 sm:col-6">
+                                    <label for="firstName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Ej. Kenji" required>
+                                </div>
+
+                                <div class="col-12 sm:col-6">
+                                    <label for="lastName" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Ej. Sato" required>
+                                </div>
+
+                                <div class="col-12 sm:col-6">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="+34 600 000 000" required>
+                                </div>
+
+                                <div class="col-12 sm:col-6">
+                                    <label for="email" class="form-label">Correo electrónico <span class="fg-2">(Opcional)</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="tu@correo.com">
+                                </div>
+
+                                <div class="col-12 md:col-4">
+                                    <label for="date" class="form-label">Fecha</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+
+                                <div class="col-12 md:col-4">
+                                    <label for="time" class="form-label">Turno / Hora</label>
+                                    <select class="form-select" id="time" required>
+                                        <option value="">Elegir hora...</option>
+                                        <option>13:30 (Comida)</option>
+                                        <option>14:30 (Comida)</option>
+                                        <option>20:30 (Cena)</option>
+                                        <option>21:30 (Cena)</option>
+                                        <option>22:30 (Cena)</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 md:col-4">
+                                    <label for="guests" class="form-label">Comensales</label>
+                                    <select class="form-select" id="guests" required>
+                                        <option value="">Personas...</option>
+                                        <option>1 persona</option>
+                                        <option selected>2 personas</option>
+                                        <option>3 personas</option>
+                                        <option>4 personas</option>
+                                        <option>5 personas</option>
+                                        <option>6 personas</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="zone" class="form-label">Zona preferida <span class="fg-2">(Opcional)</span></label>
+                                    <select class="form-select" id="zone">
+                                        <option value="salon">Salón principal</option>
+                                        <option value="barra">Barra Sushi Omakase</option>
+                                        <option value="tatami">Mesa baja estilo japonés</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="notes" class="form-label">Alergias o peticiones especiales <span class="fg-2">(Opcional)</span></label>
+                                    <input type="text" class="form-control" id="notes" placeholder="Ej. Alergia al marisco, trona para bebé, celebración...">
+                                </div>
+
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="privacy" required>
+                                <label class="form-check-label" for="privacy">Acepto recibir confirmación de mi reserva por SMS o correo electrónico.</label>
+                            </div>
+
+                            <button class="w-100 btn btn-danger btn-lg" type="submit">Confirmar Reserva</button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--  FOOTER  -->
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+            <div class="md:col-6 d-flex flex-column">
+                <span class="fw-bold text-body">© 2026 Kurogane Restaurante Japonés · Daniel Merino</span>
+                <small class="fg-2">Calle de Velázquez 45, Madrid · +34 910 00 00 00</small>
+            </div>
+            <ul class="nav md:col-6 justify-content-end list-unstyled d-flex gap-3">
+                <li><a class="fg-2 text-decoration-none" href="#inicio">Inicio</a></li>
+                <li><a class="fg-2 text-decoration-none" href="#especialidades">Carta</a></li>
+                <li><a class="fg-2 text-decoration-none" href="#resenas">Reseñas</a></li>
+                <li><a class="fg-2 text-decoration-none" href="#reservas">Reservas</a></li>
+                <li><a class="fg-2 text-decoration-none" href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </footer>
+
+        <!-- Bootstrap v6 JS -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+    </body>
+</html>
